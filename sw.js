@@ -4,7 +4,7 @@ const dynamicCache = 'dynamic-v1';
 const inmutableCache = 'inmutable-v1';
 
 const appShell = [
-  '/',
+  // '/',
   'index.html',
   'css/style.css',
   'img/favicon.ico',
