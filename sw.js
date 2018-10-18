@@ -42,6 +42,9 @@ self.addEventListener('activate', (e) => {
       if (key !== staticCache && key.includes('static')) {
         return caches.delete(key);
       }
+      if (key !== dynamicCache && key.includes('dynamic')) {
+        return caches.delete(key);
+      }
     })
   });
   e.waitUntil(respuesta);
